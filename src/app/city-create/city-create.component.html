@@ -1,0 +1,26 @@
+<header class="header">
+  <h2 class="header__title">Создание города</h2>
+</header>
+<main class="create-city">
+  <button class="create-city__back-button" (click)="onBack()">
+    <img src="./assets/back.svg" alt="comeback" class="create-city__back-icon">
+    Назад
+
+  </button>
+  <form class="create-city__form" (ngSubmit)="onSubmit()">
+    <div class="create-city__form-group">
+      <label for="name" class="create-city__label">Название города</label>
+      <input type="text" id="name" class="create-city__input" [(ngModel)]="city.name" name="name" required>
+    </div>
+    <div class="create-city__form-group">
+      <label for="description" class="create-city__label">Описание города</label>
+      <textarea id="description" class="create-city__textarea" [(ngModel)]="city.description" name="description" required></textarea>
+    </div>
+    <div class="create-city__form-group">
+      <label for="imageUrl" class="create-city__label">Ссылка на картинку</label>
+      <input type="text" id="imageUrl" class="create-city__input" [(ngModel)]="city.imageUrl" name="imageUrl" required>
+    </div>
+    <button type="submit" class="create-city__submit-button">Создать</button>
+  </form>
+</main>
+

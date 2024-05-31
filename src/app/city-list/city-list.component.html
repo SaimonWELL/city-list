@@ -1,0 +1,54 @@
+
+<header class="header">
+  <h2 class="header__title">Список городов</h2>
+</header>
+
+
+
+<main>
+  <div class="view-toggle">
+    <button [class]="viewMode==='list'? 'view-toggle__button-active view-toggle__button' :'view-toggle__button' " (click)="toggleViewMode('list')">Список</button>
+    <button [class]="viewMode==='tile'? 'view-toggle__button-active view-toggle__button' :'view-toggle__button' " (click)="toggleViewMode('tile')">Плитка</button>
+    <button class="view-toggle__button view-toggle__button--create" [routerLink]="['/create']">Создать</button>
+  </div>
+
+  <div class="city-list" *ngIf="viewMode === 'list'">
+
+    <div *ngFor="let city of cities" class="city-list__item">
+      <img class="city-list__img" [src]="city.imageUrl" alt="{{ city.name }}">
+      <div class="city-list__info">
+        <h3 class="city-list__name" (click)="toggleFavorite(city.id)">
+          {{ city.name }}
+          <img
+            [src]="city.isFavorite ? './assets/star-filled.svg' : '../assets/star-empty.svg'"
+            alt="star"
+            class="city-list__star"
+            >
+        </h3>
+        <p class="city-list__description">{{ city.description }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="city-tile" *ngIf="viewMode === 'tile'">
+    <div class="city-tile__container">
+      <div *ngFor="let city of cities" class="city-tile__item">
+        <img class="city-tile__img" [src]="city.imageUrl" alt="{{ city.name }}">
+        <div class="city-tile__info">
+          <h3 class="city-tile__name" (click)="toggleFavorite(city.id)">
+            {{ city.name }}
+            <img
+              [src]="city.isFavorite ? './assets/star-filled.svg' : '../assets/star-empty.svg'"
+              alt="star"
+              class="city-tile__star"
+            >
+          </h3>
+          <p class="city-tile__description">{{ city.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+

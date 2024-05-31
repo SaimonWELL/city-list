@@ -1,0 +1,142 @@
+
+.header{
+  background-color: #F2F5FA;
+}
+.header__title{
+  margin: 0;
+  padding: 40px 0 44px 60px;
+  font-size: 28px;
+  font-weight: 500;
+  color: #434652;
+}
+
+main{
+  margin-left: 60px;
+  margin-top: 36px;
+}
+
+.view-toggle {
+  margin-bottom: 16px;
+}
+
+.view-toggle__button{
+  font-size: 13px;
+  padding: 0 12px 0 12px;
+  height: 36px;
+  cursor: pointer;
+  background-color: #FFFFFF;
+  border: #C4C7D1 1px solid;
+  color: #434652;
+  font-weight: 400;
+}
+
+.view-toggle__button-active{
+  background-color: #F2F5FA;
+}
+
+.view-toggle__button--create{
+  position: relative;
+  background-color: #00bcd4;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+  margin-right: 60px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.city-list__item{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin: 20px 48px 20px 0;
+}
+.city-list__item:first-child{
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.city-list__img{
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.city-list__info{
+  margin-left: 28px;
+}
+.city-list__name{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  cursor: pointer;
+  display: flex;
+  gap: 14px;
+  max-width: fit-content;
+  color: #434652;
+}
+.city-list__star, .city-tile__star{
+  filter: invert(49%) sepia(13%) saturate(302%) hue-rotate(188deg) brightness(94%) contrast(93%);
+}
+
+.city-list__description{
+  font-size: 14px;
+  font-weight: 400;
+  color: #757986;
+}
+
+
+.city-tile__container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 60px;
+}
+
+.city-tile__item{
+  max-width: 320px;
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #F2F5FA;
+}
+.city-tile__item:hover{
+  box-shadow: 0 3px 6px 0 #4C5D703D;
+}
+
+.city-tile__img{
+  max-width: 320px;
+  max-height: 188px;
+  object-fit: contain;
+}
+
+.city-tile__info{
+  padding: 16px 0 32px 20px;
+}
+
+.city-tile__name{
+  display: flex;
+  cursor: pointer;
+  gap: 10px;
+  max-width: fit-content;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  color: #434652;
+}
+.city-tile__description{
+  margin: 8px 0 0;
+  color: #757986;
+}
+
+
+
