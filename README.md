@@ -1,27 +1,71 @@
-# CityList
+# Тестовое задание на позицию frontend developer
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.2.
+## 📋 <a name="table">Навигация</a>
 
-## Development server
+1. 🚨 [Задание](#task)
+2. 🚀 [Live Demo](#demo)
+3. 🤸 [Установка проекта](#quick-start)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## <a name="task">🚨 Задание </a>
 
-## Code scaffolding
+Создать веб-приложение на Angular, отображающее данные.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Формат данных:
+• id (number)
+• image - фото города (string)
+• name - название города (string)
+• description - описание города (string)
+• favorite - состояние добавленного в избранное (boolean)
 
-## Build
+Требования
+1. У приложения есть два компонента, отвечающие за вывод данных в виде плитки и
+списка соответственно. Переключение между ними происходит в родительском
+компоненте app.
+2. У элементов есть возможность добавить в избранное, и это состояние общее, то
+есть не зависит от типа отображения (плитка и список).
+3. Требования к внешнему виду:
+-Верстка в соответствии с макетом.
+-Шрифт Roboto.
+-Использовать иконки и цвета из макета.
+4. Использовать CSS Flexbox при верстке страниц. Страница должна растягиваться во
+весь экран. (при желании можно дополнить CSS Grid Layout)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+ ## <a name="demo">🚀 Live Demo </a>
+ 
+<a href="https://city-list-zeta.vercel.app/" target="_blank">🔴 Live Demo</a>
 
-## Running unit tests
+## <a name="quick-start">🤸 Установка проекта</a>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Выполните следующие шаги, чтобы установить проект на вашем компьютере.
 
-## Running end-to-end tests
+**Необходимые требования**
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Убедитесь, что на вашем компьютере установлено:
 
-## Further help
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/) (Node Package Manager)
+- [Angular v.18](https://angular.dev/)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+**Копирование репозитория**
+
+```bash
+git clone https://github.com/SaimonWELL/city-list.git
+```
+
+**Установка**
+
+Установите зависимости проекта с помощью npm:
+
+```bash
+npm install
+```
+
+**Запуск проекта**
+
+```bash
+ng serve
+```
+
+Откройте http://localhost:**** в браузере, чтобы просмотреть проект. По умолчанию проект будет доступен по адресу http://localhost:4200/
+
